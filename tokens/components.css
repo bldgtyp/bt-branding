@@ -131,6 +131,31 @@
 
 
 /* ==========================================================
+   4b. CARD GRID — TIGHT
+   Zero-gap grid where service cards tile edge-to-edge with
+   shared borders. Wrap service-cards in this container.
+   Outer border supplied by the container; cards contribute
+   only right + bottom borders (same pattern as doc-card grid).
+   ========================================================== */
+
+.card-grid--tight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    border-top: 1px solid var(--border-card);
+    border-left: 1px solid var(--border-card);
+}
+
+.card-grid--tight > .service-card {
+    max-width: none;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid var(--border-card);
+    border-bottom: 1px solid var(--border-card);
+}
+
+
+/* ==========================================================
    5. STATS BAR
    ========================================================== */
 

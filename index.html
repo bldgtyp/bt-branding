@@ -698,6 +698,31 @@
             </div>
         </div>
 
+        <h3>Service Card — Tight Grid</h3>
+        <p class="type-body" style="margin-bottom: 16px;">Wrap service cards in <code style="font-family: var(--font-mono); font-size: 13px; background: var(--bg-elev); padding: 2px 6px; border-radius: 3px;">card-grid--tight</code> for a zero-gap tiled layout with shared borders. Cards expand to fill columns and lose their border-radius.</p>
+        <div class="card-grid--tight" style="margin-top: 24px;">
+            <div class="service-card">
+                <div class="service-card__title">Energy Modeling</div>
+                <div class="service-card__subtitle">Know before you build</div>
+                <div class="service-card__body">We model your building's thermal performance during the design phase, giving you data-driven confidence before breaking ground.</div>
+            </div>
+            <div class="service-card">
+                <div class="service-card__title">Thermal Bridges</div>
+                <div class="service-card__subtitle">Find the hidden losses</div>
+                <div class="service-card__body">Detailed 2D and 3D thermal analysis of critical junctions &mdash; foundations, windows, balconies &mdash; where energy is quietly leaking.</div>
+            </div>
+            <div class="service-card">
+                <div class="service-card__title">Certification</div>
+                <div class="service-card__subtitle">Cross the finish line</div>
+                <div class="service-card__body">Full-service Passive House certification support &mdash; documentation, review coordination, and quality assurance through final approval.</div>
+            </div>
+            <div class="service-card">
+                <div class="service-card__title">Consulting</div>
+                <div class="service-card__subtitle">Early answers, better buildings</div>
+                <div class="service-card__body">Assembly design, mechanical strategy, and specification review for teams pursuing high-performance envelopes.</div>
+            </div>
+        </div>
+
         <h3>Stats Bar (Always Dark)</h3>
         <div class="stats-bar" style="margin-top: 24px;">
             <div>
@@ -1046,6 +1071,13 @@ document.documentElement.dataset.theme =
   &lt;div class="<span class="prop">service-card__title</span>"&gt;...&lt;/div&gt;
   &lt;div class="<span class="prop">service-card__subtitle</span>"&gt;...&lt;/div&gt;
   &lt;div class="<span class="prop">service-card__body</span>"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+<span class="comment">&lt;!-- Service cards — tight grid (no gaps, shared borders) --&gt;</span>
+&lt;div class="<span class="prop">card-grid--tight</span>"&gt;
+  &lt;div class="<span class="prop">service-card</span>"&gt;...&lt;/div&gt;
+  &lt;div class="<span class="prop">service-card</span>"&gt;...&lt;/div&gt;
+  &lt;div class="<span class="prop">service-card</span>"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 
 <span class="comment">&lt;!-- Graph paper background --&gt;</span>
