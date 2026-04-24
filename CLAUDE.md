@@ -13,7 +13,8 @@ Single-page design system and brand reference for all BLDGTYP web products (bldg
 - `tokens/tokens.css` — CSS custom properties (colors, fonts, spacing). Zero selectors. This is the single source of truth for all color values.
 - `tokens/components.css` — Reusable UI component classes built on tokens
 - `tokens/tokens.json` — Machine-readable token export (must be kept in sync with tokens.css manually)
-- `assets/` — Hero and detail images (PNGs)
+- `assets/` — Hero images (PNGs) and logos (SVGs)
+- `assets/ph-tools-logo.svg` — PH-Tools molecular hexagon mark (Illustrator source, 550x455 viewBox)
 
 ## Local development
 Start a local server from this directory:

@@ -279,6 +279,47 @@
             color: var(--text-muted); margin-top: 4px;
         }
 
+        /* ========== LOGO SHOWCASE ========== */
+        .logo-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .logo-card {
+            border: 1px solid var(--border-card);
+            border-radius: var(--radius-sm);
+            padding: 48px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-card svg.logo-inline {
+            max-width: 220px;
+            height: auto;
+        }
+
+        .logo-inline .logo-struct { fill: #222; }
+        .logo-inline .logo-stroke { stroke: #222; }
+
+        [data-theme="dark"] .logo-inline .logo-struct { fill: #fff; }
+        [data-theme="dark"] .logo-inline .logo-stroke { stroke: #fff; }
+
+        .logo-card--dark {
+            background-color: #0C0C0C;
+            border-color: #2a2a2a;
+        }
+
+        .logo-files {
+            margin-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .logo-showcase { grid-template-columns: 1fr; }
+        }
+
         /* ========== IMAGE TREATMENT ========== */
         .image-demo {
             position: relative;
@@ -327,6 +368,7 @@
             <a href="#typography" class="type-mono-nav">Type</a>
             <a href="#components" class="type-mono-nav">Components</a>
             <a href="#patterns" class="type-mono-nav">Patterns</a>
+            <a href="#logos" class="type-mono-nav">Logos</a>
             <a href="#usage" class="type-mono-nav">Usage</a>
         </div>
         <div class="nav-icons">
@@ -1060,9 +1102,82 @@ tokens.typography.scale.body    <span class="comment">// { weight: 300, size: "1
         </table>
     </section>
 
-    <!-- ========== 6. BRAND VOICE ========== -->
+    <!-- ========== 6. LOGOS ========== -->
+    <section id="logos">
+        <span class="section-label">06 &middot; Logos</span>
+        <h2>Logos</h2>
+        <p class="section-intro type-body-lg">Brand marks for BLDGTYP products. SVG format for web use &mdash; scalable, transparent background, no external dependencies.</p>
+
+        <h3>PH-Tools</h3>
+        <p class="type-body" style="margin-bottom: 16px;">Molecular hexagon mark representing the interconnected PH-Tools ecosystem. Four honeycomb cells in brand colors connected by a zigzag bond path with terminal nodes.</p>
+
+        <div class="logo-showcase">
+            <div class="logo-card">
+                <svg class="logo-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 455" aria-label="PH-Tools logo on light background">
+                  <path class="logo-struct" d="M409.2,270.2l48.8-84.6,1.2-2-1.2-2-52.3-90.6-1.2-2h-100L255.8,4.4l-1.2-2h-109.2l-1.2,2-52.3,90.6-1.2,2,1.2,2,48.8,84.6-48.8,84.6-1.2,2,1.2,2,52.3,90.6,1.2,2h100l48.8,84.6,1.2,2h109.2l1.2-2,52.3-90.6,1.2-2-1.2-2-48.8-84.6Z"/>
+                  <polygon fill="#3e93ae" points="397.7 274.2 302.3 274.2 254.6 356.8 302.3 439.4 397.7 439.4 445.4 356.8 397.7 274.2"/>
+                  <polygon fill="#85b8c6" points="247.7 187.6 152.3 187.6 104.6 270.2 152.3 352.8 247.7 352.8 295.4 270.2 247.7 187.6"/>
+                  <polygon fill="#d8d8dc" points="247.7 14.4 152.3 14.4 104.6 97 152.3 179.6 247.7 179.6 295.4 97 247.7 14.4"/>
+                  <polygon fill="#e23489" points="302.3 266.2 397.7 266.2 445.4 183.6 397.7 101 302.3 101 254.6 183.6 302.3 266.2"/>
+                  <circle class="logo-struct" cx="30" cy="270.2" r="27.2"/>
+                  <circle class="logo-struct" cx="520" cy="183.6" r="28.1"/>
+                  <polyline class="logo-stroke" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" points="30 270.2 100 270.2 150 183.6 250 183.6 300 270.2 400 270.2 450 183.6 520 183.6"/>
+                </svg>
+            </div>
+            <div class="logo-card logo-card--dark">
+                <svg class="logo-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 455" aria-label="PH-Tools logo on dark background">
+                  <path fill="#ffffff" d="M409.2,270.2l48.8-84.6,1.2-2-1.2-2-52.3-90.6-1.2-2h-100L255.8,4.4l-1.2-2h-109.2l-1.2,2-52.3,90.6-1.2,2,1.2,2,48.8,84.6-48.8,84.6-1.2,2,1.2,2,52.3,90.6,1.2,2h100l48.8,84.6,1.2,2h109.2l1.2-2,52.3-90.6,1.2-2-1.2-2-48.8-84.6Z"/>
+                  <polygon fill="#3e93ae" points="397.7 274.2 302.3 274.2 254.6 356.8 302.3 439.4 397.7 439.4 445.4 356.8 397.7 274.2"/>
+                  <polygon fill="#85b8c6" points="247.7 187.6 152.3 187.6 104.6 270.2 152.3 352.8 247.7 352.8 295.4 270.2 247.7 187.6"/>
+                  <polygon fill="#d8d8dc" points="247.7 14.4 152.3 14.4 104.6 97 152.3 179.6 247.7 179.6 295.4 97 247.7 14.4"/>
+                  <polygon fill="#e23489" points="302.3 266.2 397.7 266.2 445.4 183.6 397.7 101 302.3 101 254.6 183.6 302.3 266.2"/>
+                  <circle fill="#ffffff" cx="30" cy="270.2" r="27.2"/>
+                  <circle fill="#ffffff" cx="520" cy="183.6" r="28.1"/>
+                  <polyline fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="28" points="30 270.2 100 270.2 150 183.6 250 183.6 300 270.2 400 270.2 450 183.6 520 183.6"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="logo-files">
+            <table class="token-table">
+                <thead>
+                    <tr><th>Property</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>File</code></td>
+                        <td><code>assets/ph-tools-logo.svg</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>ViewBox</code></td>
+                        <td>550 &times; 455</td>
+                    </tr>
+                    <tr>
+                        <td><code>Colors</code></td>
+                        <td>
+                            <span style="display:inline-block;width:12px;height:12px;background:#D8D8DC;border:1px solid #ccc;border-radius:2px;vertical-align:middle;margin-right:4px;"></span> #D8D8DC &nbsp;
+                            <span style="display:inline-block;width:12px;height:12px;background:#85B8C6;border-radius:2px;vertical-align:middle;margin-right:4px;"></span> #85B8C6 &nbsp;
+                            <span style="display:inline-block;width:12px;height:12px;background:#3E93AE;border-radius:2px;vertical-align:middle;margin-right:4px;"></span> #3E93AE &nbsp;
+                            <span style="display:inline-block;width:12px;height:12px;background:#E23489;border-radius:2px;vertical-align:middle;margin-right:4px;"></span> #E23489 &nbsp;
+                            <span style="display:inline-block;width:12px;height:12px;background:#222;border-radius:2px;vertical-align:middle;margin-right:4px;"></span> #222222
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>Min size</code></td>
+                        <td>24px height (favicon) &mdash; bond detail holds at small sizes</td>
+                    </tr>
+                    <tr>
+                        <td><code>Clear space</code></td>
+                        <td>1 hex-width minimum on all sides</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ========== 7. BRAND VOICE ========== -->
     <section id="voice">
-        <span class="section-label">06 &middot; Voice</span>
+        <span class="section-label">07 &middot; Voice</span>
         <h2>Brand Voice</h2>
         <p class="section-intro type-body-lg">BLDGTYP speaks with technical authority while remaining accessible. The focus is always on the client's needs, not the company's credentials.</p>
 
