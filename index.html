@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="stylesheet" href="tokens/tokens.css">
     <link rel="stylesheet" href="tokens/components.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
     <style>
         /* ========== BASE ========== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,7 +18,8 @@
             background-color: var(--bg-page);
             color: var(--text-primary);
             font-family: var(--font-primary);
-            font-weight: 300;
+            font-weight: 400;
+            letter-spacing: 0.05em;
             line-height: 1.7;
             transition: background-color var(--transition-base), color var(--transition-base);
         }
@@ -66,7 +67,7 @@
         }
 
         .hero-label {
-            font-family: var(--font-mono); font-weight: 300; font-size: 14px;
+            font-family: var(--font-mono); font-weight: 400; font-size: 14px;
             letter-spacing: 0.12em; text-transform: uppercase;
             color: var(--accent); margin-bottom: 32px; display: block;
         }
@@ -85,7 +86,7 @@
 
         .hero .version-tag {
             display: inline-block; margin-top: 32px;
-            font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+            font-family: var(--font-mono); font-weight: 400; font-size: 12px;
             letter-spacing: 0.05em; text-transform: uppercase;
             color: var(--text-muted); padding: 6px 14px;
             border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);
@@ -144,7 +145,7 @@
         }
 
         .swatch-name {
-            font-family: var(--font-mono); font-weight: 300; font-size: 11px;
+            font-family: var(--font-mono); font-weight: 400; font-size: 11px;
             letter-spacing: 0.03em; color: var(--text-secondary);
             margin-bottom: 4px;
         }
@@ -168,7 +169,7 @@
         }
 
         .type-meta span {
-            font-family: var(--font-mono); font-weight: 300; font-size: 11px;
+            font-family: var(--font-mono); font-weight: 400; font-size: 11px;
             letter-spacing: 0.03em; color: var(--text-muted);
             padding: 3px 10px;
             border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);
@@ -181,12 +182,15 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 24px;
+            font-family: var(--font-table);
             font-size: 14px;
+            letter-spacing: normal;
+            font-variant-numeric: tabular-nums;
         }
 
         .token-table th {
-            font-family: var(--font-mono); font-weight: 400; font-size: 11px;
-            letter-spacing: 0.08em; text-transform: uppercase;
+            font-family: var(--font-table); font-weight: 500; font-size: 12px;
+            letter-spacing: 0.02em; text-transform: uppercase;
             color: var(--text-muted);
             text-align: left; padding: 12px 16px;
             border-bottom: 2px solid var(--border-subtle);
@@ -196,6 +200,7 @@
             padding: 12px 16px;
             border-bottom: 1px solid var(--border-subtle);
             vertical-align: middle;
+            line-height: 1.5;
         }
 
         .token-table code {
@@ -222,7 +227,7 @@
 
         .graph-paper-demo p {
             position: relative; z-index: 1;
-            font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+            font-family: var(--font-mono); font-weight: 400; font-size: 12px;
             color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase;
         }
 
@@ -334,7 +339,7 @@
 
         .image-demo-label {
             position: relative; z-index: 1;
-            font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+            font-family: var(--font-mono); font-weight: 400; font-size: 12px;
             letter-spacing: 0.05em; color: var(--text-muted); text-transform: uppercase;
         }
 
@@ -565,7 +570,7 @@
     <section id="typography">
         <span class="section-label">02 &middot; Typography</span>
         <h2>Type System</h2>
-        <p class="section-intro type-body-lg"><strong>Outfit</strong> for all readable content &mdash; headings, body, subtitles. <strong>JetBrains Mono</strong> for UI labels, navigation, section markers, buttons, and technical annotations. Anything that functions as a "label" rather than content uses mono.</p>
+        <p class="section-intro type-body-lg"><strong>Outfit</strong> for headings and prose. <strong>Geist</strong> for table and data text. <strong>Geist Mono</strong> for buttons, section labels, navigation, and technical annotations. Keep Geist scoped to dense tabular data rather than general body copy.</p>
 
         <div class="type-specimen">
             <div class="type-meta">
@@ -614,47 +619,86 @@
 
         <div class="type-specimen">
             <div class="type-meta">
-                <span>Outfit 300</span>
+                <span>Outfit 400</span>
                 <span>17px</span>
                 <span>Body text</span>
             </div>
-            <div class="type-preview" style="font-family: 'Outfit', sans-serif; font-weight: 300; font-size: 17px; line-height: 1.8; color: var(--text-secondary);">
+            <div class="type-preview" style="font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 17px; letter-spacing: 0.05em; line-height: 1.8; color: var(--text-secondary);">
                 We model your building's thermal performance before construction begins, identifying hidden energy losses and ensuring your design meets Passive House certification targets. Our reports give you actionable data to guide design decisions with confidence.
             </div>
         </div>
 
         <div class="type-specimen">
             <div class="type-meta">
-                <span>JetBrains Mono 300</span>
+                <span>Geist Mono 400</span>
                 <span>12px</span>
                 <span>0.15em tracking</span>
                 <span>Section Label</span>
             </div>
-            <div class="type-preview" style="font-family: 'JetBrains Mono', monospace; font-weight: 300; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent);">
+            <div class="type-preview" style="font-family: 'Geist Mono', monospace; font-weight: 400; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent);">
                 03 &middot; What You Get
             </div>
         </div>
 
         <div class="type-specimen">
             <div class="type-meta">
-                <span>JetBrains Mono 300</span>
+                <span>Geist Mono 400</span>
                 <span>11px</span>
                 <span>Nav Link</span>
             </div>
-            <div class="type-preview" style="font-family: 'JetBrains Mono', monospace; font-weight: 300; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-secondary);">
+            <div class="type-preview" style="font-family: 'Geist Mono', monospace; font-weight: 400; font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-secondary);">
                 Services &nbsp;&nbsp;&nbsp; Process &nbsp;&nbsp;&nbsp; About &nbsp;&nbsp;&nbsp; Contact
             </div>
         </div>
 
         <div class="type-specimen">
             <div class="type-meta">
-                <span>JetBrains Mono 400</span>
+                <span>Geist Mono 400</span>
                 <span>13px</span>
                 <span>Button / CTA</span>
             </div>
-            <div class="type-preview" style="font-family: 'JetBrains Mono', monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);">
+            <div class="type-preview" style="font-family: 'Geist Mono', monospace; font-weight: 400; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);">
                 Get Started &rarr;
             </div>
+        </div>
+
+        <div class="type-specimen">
+            <div class="type-meta">
+                <span>Geist 400 / 500</span>
+                <span>14px table cells</span>
+                <span>12px headers</span>
+                <span>tabular nums</span>
+            </div>
+            <table class="token-table" style="margin-top: 8px;">
+                <thead>
+                    <tr>
+                        <th>Assembly</th>
+                        <th>Area</th>
+                        <th>U-Value</th>
+                        <th>Heat Loss</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Exterior wall</td>
+                        <td>2,845 sf</td>
+                        <td>0.034 Btu/hr·ft²·F</td>
+                        <td>3,214 Btu/hr</td>
+                    </tr>
+                    <tr>
+                        <td>Roof assembly</td>
+                        <td>1,120 sf</td>
+                        <td>0.021 Btu/hr·ft²·F</td>
+                        <td>1,058 Btu/hr</td>
+                    </tr>
+                    <tr>
+                        <td>Triple-pane glazing</td>
+                        <td>486 sf</td>
+                        <td>0.142 Btu/hr·ft²·F</td>
+                        <td>3,105 Btu/hr</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -1035,7 +1079,8 @@ document.documentElement.dataset.theme =
         <div class="code-block">
             <code><span class="comment">&lt;!-- 1. Fonts --&gt;</span>
 &lt;link href="<span class="val">https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700
-  &amp;family=JetBrains+Mono:wght@300;400&amp;display=swap</span>" rel="stylesheet"&gt;
+  &amp;family=Geist:wght@400;500
+  &amp;family=Geist+Mono:wght@400&amp;display=swap</span>" rel="stylesheet"&gt;
 
 <span class="comment">&lt;!-- 2. Tokens (required) — colors, fonts, radii, transitions --&gt;</span>
 &lt;link rel="stylesheet" href="<span class="val">https://bldgtyp.github.io/bt-branding/tokens/tokens.css</span>"&gt;
@@ -1115,7 +1160,7 @@ const tokens = await fetch(
 ).then(r => r.json());
 
 tokens.color.accent.base.value  <span class="comment">// "#7a9424"</span>
-tokens.typography.scale.body    <span class="comment">// { weight: 300, size: "16px", ... }</span></code>
+tokens.typography.scale.body    <span class="comment">// { weight: 400, size: "16px", letterSpacing: "0.05em", ... }</span></code>
         </div>
 
         <h3>Application-Specific Notes</h3>
@@ -1135,7 +1180,7 @@ tokens.typography.scale.body    <span class="comment">// { weight: 300, size: "1
                 </tr>
                 <tr>
                     <td><strong>Design-Phase Reports</strong></td>
-                    <td>Outfit for headings/body, JetBrains Mono for data labels and annotations. Accent for section headers. Highlight for flagged items or warnings. Clean white backgrounds, minimal decoration.</td>
+                    <td>Outfit for headings/body, Geist for table text, Geist Mono for labels and annotations. Accent for section headers. Highlight for flagged items or warnings. Clean white backgrounds, minimal decoration.</td>
                 </tr>
             </tbody>
         </table>

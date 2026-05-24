@@ -23,7 +23,8 @@
 
     /* Fonts */
     --font-primary:     'Outfit', sans-serif;
-    --font-mono:        'JetBrains Mono', monospace;
+    --font-table:       'Geist', sans-serif;
+    --font-mono:        'Geist Mono', monospace;
 
     /* Radii */
     --radius-sm:        3px;

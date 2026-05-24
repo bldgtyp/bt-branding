@@ -11,7 +11,7 @@
      <link rel="stylesheet" href="https://bldgtyp.github.io/bt-branding/tokens/components.css">
 
    Also load fonts (not bundled to avoid duplication):
-     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
    ============================================================ */
 
 
@@ -173,7 +173,7 @@
 }
 
 .stats-bar__label {
-    font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+    font-family: var(--font-mono); font-weight: 400; font-size: 12px;
     letter-spacing: 0.08em; text-transform: uppercase;
     color: #6b7280; margin-top: 8px;
 }
@@ -184,7 +184,7 @@
    ========================================================== */
 
 .section-label {
-    font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+    font-family: var(--font-mono); font-weight: 400; font-size: 12px;
     letter-spacing: 0.15em; text-transform: uppercase;
     color: var(--accent-text); margin-bottom: 48px; display: block;
 }
@@ -346,25 +346,42 @@
 }
 
 .type-body {
-    font-family: var(--font-primary); font-weight: 300;
+    font-family: var(--font-primary); font-weight: 400;
     font-size: 16px; line-height: 1.7;
+    letter-spacing: 0.05em;
     color: var(--text-secondary);
 }
 
 .type-body-lg {
-    font-family: var(--font-primary); font-weight: 300;
+    font-family: var(--font-primary); font-weight: 400;
     font-size: 17px; line-height: 1.8;
+    letter-spacing: 0.05em;
     color: var(--text-secondary);
 }
 
+.type-table-text {
+    font-family: var(--font-table); font-weight: 400;
+    font-size: 14px; line-height: 1.5;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+    font-variant-numeric: tabular-nums;
+}
+
+.type-table-header {
+    font-family: var(--font-table); font-weight: 500;
+    font-size: 12px; line-height: 1.4;
+    letter-spacing: 0.02em; text-transform: uppercase;
+    color: var(--text-muted);
+}
+
 .type-mono-label {
-    font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+    font-family: var(--font-mono); font-weight: 400; font-size: 12px;
     letter-spacing: 0.15em; text-transform: uppercase;
     color: var(--accent-text);
 }
 
 .type-mono-nav {
-    font-family: var(--font-mono); font-weight: 300; font-size: 11px;
+    font-family: var(--font-mono); font-weight: 400; font-size: 11px;
     letter-spacing: 0.05em; text-transform: uppercase;
     color: var(--text-secondary); text-decoration: none;
     transition: color var(--transition-base);
@@ -378,7 +395,7 @@
 }
 
 .type-stat-label {
-    font-family: var(--font-mono); font-weight: 300; font-size: 12px;
+    font-family: var(--font-mono); font-weight: 400; font-size: 12px;
     letter-spacing: 0.08em; text-transform: uppercase;
     color: #6b7280; margin-top: 8px;
 }
@@ -424,7 +441,7 @@
 
 .hero-sub {
     font-family: var(--font-mono);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14.5px;
     color: var(--text-muted);
     max-width: 62ch;
@@ -620,7 +637,7 @@
     color: var(--text-muted);
     font-family: var(--font-mono);
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 400;
     cursor: pointer;
     transition: all .15s var(--ease);
 }
@@ -695,7 +712,7 @@
 .doc-card__idx {
     font-family: var(--font-mono);
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.18em;
     color: var(--text-muted);
     display: flex;
@@ -719,7 +736,7 @@
 .doc-card__tag {
     font-family: var(--font-mono);
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--accent-text);
@@ -794,7 +811,7 @@
 .sidebar__label {
     font-family: var(--font-mono);
     font-size: 10.5px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--text-muted);
@@ -1042,14 +1059,14 @@
     gap: 32px;
     font-family: var(--font-mono);
     font-size: 11.5px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--text-muted);
     letter-spacing: 0.04em;
 }
 
 .site-footer a {
     color: var(--text-secondary);
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     transition: color .15s var(--ease);
 }

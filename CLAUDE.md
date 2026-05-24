@@ -55,4 +55,4 @@ The graph paper SVGs in `components.css` use hardcoded `rgba()` values matching 
 6. When satisfied, update `tokens/tokens.json` to match, then commit
 
 ## Fonts
-Loaded from Google Fonts (not bundled): **Outfit** (primary) and **JetBrains Mono** (mono/UI labels).
+Loaded from Google Fonts (not bundled): **Outfit** (primary), **Geist** (table/data text), and **Geist Mono** (mono/UI labels).

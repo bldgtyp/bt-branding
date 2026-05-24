@@ -24,7 +24,7 @@ bt-branding/
 
 ```html
 <!-- 1. Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
 
 <!-- 2. Tokens (required) -->
 <link rel="stylesheet" href="https://bldgtyp.github.io/bt-branding/tokens/tokens.css">
@@ -42,7 +42,7 @@ bt-branding/
 @import url('https://bldgtyp.github.io/bt-branding/tokens/tokens.css');
 ```
 
-Then use custom properties like `var(--accent)`, `var(--bg-page)`, `var(--font-primary)`, etc.
+Then use custom properties like `var(--accent)`, `var(--bg-page)`, `var(--font-primary)`, `var(--font-table)`, etc.
 
 ## Architecture
 
@@ -90,6 +90,8 @@ The system is split into two layers so consuming apps can opt in to what they ne
 - `.type-subheading` — Subheading (20px)
 - `.type-body` — Standard body (16px)
 - `.type-body-lg` — Large body (17px)
+- `.type-table-text` — Geist table/data cell text
+- `.type-table-header` — Geist table/data header text
 - `.type-mono-label` — Mono uppercase accent label
 - `.type-mono-nav` — Mono nav link with hover state
 
@@ -117,7 +119,7 @@ https://bldgtyp.github.io/bt-branding/tokens/tokens.json
 Load from Google Fonts (not bundled to avoid duplication):
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
 ```
 
 ---
