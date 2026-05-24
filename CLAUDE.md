@@ -1,8 +1,8 @@
 # BLDGTYP Branding / Design System
 
 ## Links
-- **Repo**: https://github.com/bldgtyp/branding
-- **Live site**: https://bldgtyp.github.io/branding/
+- **Repo**: https://github.com/bldgtyp/bt-branding
+- **Live site**: https://bldgtyp.github.io/bt-branding/
 - **Deployed via**: GitHub Pages (`.github/workflows/deploy-pages.yml`)
 
 ## What this is

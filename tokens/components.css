@@ -1,14 +1,14 @@
 /* ============================================================
    BLDGTYP Design System — Reusable Components
-   https://github.com/bldgtyp/branding
+   https://github.com/bldgtyp/bt-branding
 
    Requires tokens.css to be loaded first:
-     @import url('https://bldgtyp.github.io/branding/tokens/tokens.css');
-     @import url('https://bldgtyp.github.io/branding/tokens/components.css');
+     @import url('https://bldgtyp.github.io/bt-branding/tokens/tokens.css');
+     @import url('https://bldgtyp.github.io/bt-branding/tokens/components.css');
 
    Or via <link> tags:
-     <link rel="stylesheet" href="https://bldgtyp.github.io/branding/tokens/tokens.css">
-     <link rel="stylesheet" href="https://bldgtyp.github.io/branding/tokens/components.css">
+     <link rel="stylesheet" href="https://bldgtyp.github.io/bt-branding/tokens/tokens.css">
+     <link rel="stylesheet" href="https://bldgtyp.github.io/bt-branding/tokens/components.css">
 
    Also load fonts (not bundled to avoid duplication):
      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">

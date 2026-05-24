@@ -942,7 +942,7 @@
                     <a href="#" onclick="event.preventDefault()">MIT License</a>
                 </div>
                 <div class="site-footer__right">
-                    <span>bldgtyp.github.io/branding</span>
+                    <span>bldgtyp.github.io/bt-branding</span>
                     <span class="version-badge">v 1.1.0</span>
                 </div>
             </footer>
@@ -1013,7 +1013,7 @@
         <p class="type-body" style="margin-bottom: 16px;">Attribute-based theming using <code>data-theme="light"</code> or <code>data-theme="dark"</code> on the root <code>&lt;html&gt;</code> element. Default is light. All transitions at 0.3s ease. The Stats section is always dark regardless of theme.</p>
         <div class="code-block">
             <code><span class="comment">/* Import the token file */</span>
-@import url('<span class="val">https://bldgtyp.github.io/branding/tokens/tokens.css</span>');
+@import url('<span class="val">https://bldgtyp.github.io/bt-branding/tokens/tokens.css</span>');
 
 <span class="comment">/* Set theme on &lt;html&gt; */</span>
 &lt;html data-theme="<span class="val">light</span>"&gt;
@@ -1038,10 +1038,10 @@ document.documentElement.dataset.theme =
   &amp;family=JetBrains+Mono:wght@300;400&amp;display=swap</span>" rel="stylesheet"&gt;
 
 <span class="comment">&lt;!-- 2. Tokens (required) — colors, fonts, radii, transitions --&gt;</span>
-&lt;link rel="stylesheet" href="<span class="val">https://bldgtyp.github.io/branding/tokens/tokens.css</span>"&gt;
+&lt;link rel="stylesheet" href="<span class="val">https://bldgtyp.github.io/bt-branding/tokens/tokens.css</span>"&gt;
 
 <span class="comment">&lt;!-- 3. Components (optional) — buttons, cards, icons, graph paper --&gt;</span>
-&lt;link rel="stylesheet" href="<span class="val">https://bldgtyp.github.io/branding/tokens/components.css</span>"&gt;
+&lt;link rel="stylesheet" href="<span class="val">https://bldgtyp.github.io/bt-branding/tokens/components.css</span>"&gt;
 
 <span class="comment">&lt;!-- 4. Set theme on html element --&gt;</span>
 &lt;html data-theme="<span class="val">light</span>"&gt;</code>
@@ -1051,7 +1051,7 @@ document.documentElement.dataset.theme =
         <p class="type-body" style="margin-bottom: 8px;">If you only need the design tokens and will build your own components:</p>
         <div class="code-block">
             <code><span class="comment">/* Import just the tokens */</span>
-@import url('<span class="val">https://bldgtyp.github.io/branding/tokens/tokens.css</span>');
+@import url('<span class="val">https://bldgtyp.github.io/bt-branding/tokens/tokens.css</span>');
 
 <span class="comment">/* Use custom properties in your own styles */</span>
 .my-button {
@@ -1111,7 +1111,7 @@ document.documentElement.dataset.theme =
         <div class="code-block">
             <code><span class="comment">// fetch or import tokens.json</span>
 const tokens = await fetch(
-  '<span class="val">https://bldgtyp.github.io/branding/tokens/tokens.json</span>'
+  '<span class="val">https://bldgtyp.github.io/bt-branding/tokens/tokens.json</span>'
 ).then(r => r.json());
 
 tokens.color.accent.base.value  <span class="comment">// "#7a9424"</span>
@@ -1258,7 +1258,7 @@ tokens.typography.scale.body    <span class="comment">// { weight: 300, size: "1
         <span>&copy; 2026 Building-Type LLC</span>
     </div>
     <div class="site-footer__right">
-        <span>bldgtyp.github.io/branding</span>
+        <span>bldgtyp.github.io/bt-branding</span>
         <span class="version-badge">v 1.1.0</span>
     </div>
 </footer>

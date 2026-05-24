@@ -2,12 +2,12 @@
 
 The canonical brand and UI reference for all BLDGTYP web products.
 
-**Live site:** https://bldgtyp.github.io/branding/
+**Live site:** https://bldgtyp.github.io/bt-branding/
 
 ## What's here
 
 ```
-branding/
+bt-branding/
 ├── index.html              ← Design system site (GitHub Pages)
 ├── tokens/
 │   ├── tokens.css          ← CSS custom properties (colors, fonts, spacing)
@@ -27,10 +27,10 @@ branding/
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 
 <!-- 2. Tokens (required) -->
-<link rel="stylesheet" href="https://bldgtyp.github.io/branding/tokens/tokens.css">
+<link rel="stylesheet" href="https://bldgtyp.github.io/bt-branding/tokens/tokens.css">
 
 <!-- 3. Components (optional) -->
-<link rel="stylesheet" href="https://bldgtyp.github.io/branding/tokens/components.css">
+<link rel="stylesheet" href="https://bldgtyp.github.io/bt-branding/tokens/components.css">
 
 <!-- 4. Set theme -->
 <html data-theme="light">
@@ -39,7 +39,7 @@ branding/
 **Tokens only** — if you just need colors, fonts, and spacing variables:
 
 ```css
-@import url('https://bldgtyp.github.io/branding/tokens/tokens.css');
+@import url('https://bldgtyp.github.io/bt-branding/tokens/tokens.css');
 ```
 
 Then use custom properties like `var(--accent)`, `var(--bg-page)`, `var(--font-primary)`, etc.
@@ -101,7 +101,7 @@ The system is split into two layers so consuming apps can opt in to what they ne
 For tooling, code generation, or non-CSS consumers:
 
 ```
-https://bldgtyp.github.io/branding/tokens/tokens.json
+https://bldgtyp.github.io/bt-branding/tokens/tokens.json
 ```
 
 ## Products using this system

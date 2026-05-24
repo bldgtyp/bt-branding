@@ -1,9 +1,9 @@
 /* ============================================================
    BLDGTYP Design System — CSS Custom Properties
-   https://github.com/bldgtyp/branding
+   https://github.com/bldgtyp/bt-branding
 
    Import this file in any BLDGTYP web product:
-     @import url('https://bldgtyp.github.io/branding/tokens/tokens.css');
+     @import url('https://bldgtyp.github.io/bt-branding/tokens/tokens.css');
 
    Then apply data-theme="light" or data-theme="dark" to <html>.
    ============================================================ */
